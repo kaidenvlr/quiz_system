@@ -10,9 +10,9 @@ class CourseAdmin(admin.ModelAdmin):
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ['course.name', 'points', 'name', 'answer']
+    list_display = ['course', 'points', 'name', 'answer']
 
 
 @admin.register(Result)
 class ResultAdmin(admin.ModelAdmin):
-    list_display = ['student.get_name', 'course.name', 'points', 'date']
+    list_display = ['student', 'course', 'points', 'date']
